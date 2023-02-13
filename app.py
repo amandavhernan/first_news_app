@@ -16,6 +16,14 @@ def index():
     object_list = get_csv()
     return render_template(template, object_list=object_list)
 
+@app.route('/<call_number>/')
+def detail(call_number):
+    template = 'detail.html'
+    object_list = get_csv()
+    for row in object_list:
+        if row['callNumber'] == call_number:
+            return render_template(template, object=row)
+
 if __name__ == '__main__':
     # turn on test server
     app.run(debug=True, use_reloader=True)

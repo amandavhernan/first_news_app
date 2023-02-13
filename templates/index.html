@@ -13,7 +13,7 @@
             </tr>
             {% for obj in object_list %}
             <tr>
-                <td>{{ obj.callNumber }}</td>
+                <td><a href="{{ obj.callNumber }}/">{{ obj.callNumber }}</a></td>
                 <td>{{ obj.date }}</td>
                 <td>{{ obj.time }}</td>
                 <td>{{ obj.location }}</td>
