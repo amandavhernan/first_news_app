@@ -1,0 +1,6 @@
+.DS_Store
+.coverage
+*#
+*.db
+*.pyc
+docs/_build
