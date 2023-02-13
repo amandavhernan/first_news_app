@@ -1,5 +1,6 @@
 import csv
 from flask import Flask
+from flask import abort
 from flask import render_template
 app = Flask(__name__) # double underscores
 
@@ -23,6 +24,7 @@ def detail(call_number):
     for row in object_list:
         if row['callNumber'] == call_number:
             return render_template(template, object=row)
+    abort(404)        
 
 if __name__ == '__main__':
     # turn on test server
