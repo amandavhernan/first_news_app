@@ -3,5 +3,24 @@
     <head></head>
     <body>
         <h1>One Week of Baltimore 911 Calls</h1>
+        <table border=1 cellpadding="7">
+            <tr>
+                <th>Call Number</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Location</th>
+                <th>Neighborhood</th>
+            </tr>
+            {% for obj in object_list %}
+            <tr>
+                <td>{{ obj.callNumber }}</td>
+                <td>{{ obj.date }}</td>
+                <td>{{ obj.time }}</td>
+                <td>{{ obj.location }}</td>
+                <td>{{ obj.Neighborhood }}</td>
+            </tr>
+            {% endfor %}
+        </table>
     </body>
 </html>
+
