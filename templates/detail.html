@@ -1,8 +1,25 @@
 <html lang="en">
-    <head></head>
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+ integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+ crossorigin=""></script>
+    </head>
     <body>
-        <h1>At {{ object.time }} on {{ object.date }}, a 911 call about an overdose was placed from near
+        <div id="map" style="width:100%; height:300px;"></div>
+        <h1>
+            At {{ object.time }} on {{ object.date }}, a 911 call about an overdose was placed from near
             {{ object.location }} in the {{ object.Neighborhood }} neighborhood.
         </h1>
+        <script type="text/javascript">
+            var map = L.map('map').setView([{{ object.lat }}, {{ object.lng }}], 16);
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);
+            var marker = L.marker([{{ object.lat }}, {{ object.lng }}]).addTo(map);
+        </script>
     </body>
 </html>
