@@ -1,5 +1,7 @@
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../static/style.css" />
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
     crossorigin=""/>
@@ -8,18 +10,32 @@
  crossorigin=""></script>
     </head>
     <body>
+        <nav>
+            <a href="https://first-news-app-umd.readthedocs.org/">
+                <img src="../static/shell.png">
+            </a>
+        </nav>
+        <header>
+            <h1>
+                At 11:53:00 on 2022-07-01, a 911 call about an overdose was placed from near
+                5100 REISTERSTOWN RD BALTIMORE MD in the Woodmere neighborhood.
+            </h1>
+        </header>
         <div id="map" style="width:100%; height:300px;"></div>
-        <h1>
-            At 11:53:00 on 2022-07-01, a 911 call about an overdose was placed from near
-            5100 REISTERSTOWN RD BALTIMORE MD in the Woodmere neighborhood.
-        </h1>
         <script type="text/javascript">
             var map = L.map('map').setView([39.342103, -76.682731], 16);
-            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-            }).addTo(map);
-            var marker = L.marker([39.342103, -76.682731]).addTo(map);
+            var osmLayer = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 18,
+                attribution: 'Data, imagery and map information provided by <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> and contributors.'
+            });
+            map.addLayer(osmLayer);
+            var blackIcon = L.Icon.extend({
+                options: {
+                    iconUrl: "../static/marker-24.png",
+                    iconSize: [24, 24]
+                }
+            });
+            var marker = L.marker([39.342103, -76.682731], {icon: new blackIcon()}).addTo(map);
         </script>
     </body>
 </html>

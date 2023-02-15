@@ -3,6 +3,7 @@ from flask import Flask
 from flask import abort
 from flask import render_template
 app = Flask(__name__) # double underscores
+app.config['FREEZER_RELATIVE_URLS'] = True
 
 def get_csv():
     csv_path = './static/balt911.csv'
