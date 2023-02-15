@@ -1,0 +1,3389 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+ integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+ crossorigin=""></script>
+    </head>
+    <body>
+        <div id="map" style="width:100%; height:300px;"></div>
+        <h1>One Week of Baltimore 911 Calls</h1>
+        <table border=1 cellpadding="7">
+            <tr>
+                <th>Call Number</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Location</th>
+                <th>Neighborhood</th>
+            </tr>
+            
+            <tr>
+                <td><a href="P221761572/">P221761572</a></td>
+                <td>2022-06-25</td>
+                <td>10:44:00</td>
+                <td>EDMONDSON AV and POPLAR GROVE ST BALTIMORE MD</td>
+                <td>Penrose/Fayette Street Outreach</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221800526/">P221800526</a></td>
+                <td>2022-06-29</td>
+                <td>02:55:00</td>
+                <td>2400 BLK BRENTWOOD AV BALTIMORE MD</td>
+                <td>Barclay</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221801774/">P221801774</a></td>
+                <td>2022-06-29</td>
+                <td>11:08:00</td>
+                <td>3700 W BELVEDERE AV BALTIMORE MD</td>
+                <td>Arlington</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221820832/">P221820832</a></td>
+                <td>2022-07-01</td>
+                <td>05:03:00</td>
+                <td>1500 WASHINGTON BL BALTIMORE MD</td>
+                <td>Carroll Park</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221823084/">P221823084</a></td>
+                <td>2022-07-01</td>
+                <td>16:47:00</td>
+                <td>SHOPPERS BALTIMORE MD</td>
+                <td>Mondawmin</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221824123/">P221824123</a></td>
+                <td>2022-07-01</td>
+                <td>20:26:00</td>
+                <td>100 E FAYETTE ST BALTIMORE MD</td>
+                <td>Downtown</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221762334/">P221762334</a></td>
+                <td>2022-06-25</td>
+                <td>14:40:00</td>
+                <td>2700 BLK GREENMOUNT AV BALTIMORE MD</td>
+                <td>Better Waverly</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221791129/">P221791129</a></td>
+                <td>2022-06-28</td>
+                <td>07:57:00</td>
+                <td>W SARATOGA ST and N PACA ST BALTIMORE MD</td>
+                <td>Downtown</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221792137/">P221792137</a></td>
+                <td>2022-06-28</td>
+                <td>11:58:00</td>
+                <td>1200 EDMONDSON AV BALTIMORE MD</td>
+                <td>Harlem Park</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221802336/">P221802336</a></td>
+                <td>2022-06-29</td>
+                <td>13:24:00</td>
+                <td>5200 EASTERN AV BALTIMORE MD</td>
+                <td>Hopkins Bayview</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221802828/">P221802828</a></td>
+                <td>2022-06-29</td>
+                <td>15:36:00</td>
+                <td>4700 BLK BEAUFORT AV BALTIMORE MD</td>
+                <td>Central Park Heights</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221822683/">P221822683</a></td>
+                <td>2022-07-01</td>
+                <td>15:14:00</td>
+                <td>300 W PRATT ST BALTIMORE MD</td>
+                <td>Downtown West</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221823347/">P221823347</a></td>
+                <td>2022-07-01</td>
+                <td>17:36:00</td>
+                <td>200 N DECKER AV BALTIMORE MD</td>
+                <td>Patterson Park Neighborhood</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221792608/">P221792608</a></td>
+                <td>2022-06-28</td>
+                <td>13:58:00</td>
+                <td>1800 N WOLFE ST BALTIMORE MD</td>
+                <td>Broadway East</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221811192/">P221811192</a></td>
+                <td>2022-06-30</td>
+                <td>07:56:00</td>
+                <td>4000 SPRUCE DR BALTIMORE MD</td>
+                <td>Greenspring</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221822062/">P221822062</a></td>
+                <td>2022-07-01</td>
+                <td>12:13:00</td>
+                <td>2900 W MULBERRY ST BALTIMORE MD</td>
+                <td>Penrose/Fayette Street Outreach</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221823115/">P221823115</a></td>
+                <td>2022-07-01</td>
+                <td>16:52:00</td>
+                <td>500 S BENTALOU ST BALTIMORE MD</td>
+                <td>Carrollton Ridge</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221760280/">P221760280</a></td>
+                <td>2022-06-25</td>
+                <td>01:22:00</td>
+                <td>2200 ROSLYN AV BALTIMORE MD</td>
+                <td>Mount Holly</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221762942/">P221762942</a></td>
+                <td>2022-06-25</td>
+                <td>17:00:00</td>
+                <td>5000 DENVIEW WY BALTIMORE MD</td>
+                <td>Frankford</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221763914/">P221763914</a></td>
+                <td>2022-06-25</td>
+                <td>20:55:00</td>
+                <td>6600 PIONEER DR BALTIMORE MD</td>
+                <td>Hamilton Hills</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221773224/">P221773224</a></td>
+                <td>2022-06-26</td>
+                <td>18:23:00</td>
+                <td>1400 BLK N ROSE ST BALTIMORE MD</td>
+                <td>Berea</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221793674/">P221793674</a></td>
+                <td>2022-06-28</td>
+                <td>18:35:00</td>
+                <td>W NORTHERN PY and PARK HEIGHTS AV BALTIMORE MD</td>
+                <td>Glen</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221813140/">P221813140</a></td>
+                <td>2022-06-30</td>
+                <td>16:18:00</td>
+                <td>E NORTH AV and AISQUITH ST BALTIMORE MD</td>
+                <td>Oliver</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221814759/">P221814759</a></td>
+                <td>2022-06-30</td>
+                <td>22:56:00</td>
+                <td>5500 PARK HEIGHTS AV BALTIMORE MD</td>
+                <td>Pimlico Good Neighbors</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221823004/">P221823004</a></td>
+                <td>2022-07-01</td>
+                <td>16:25:00</td>
+                <td>HARFORD RD and BONAPARTE AV BALTIMORE MD</td>
+                <td>East Baltimore Midway</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221823428/">P221823428</a></td>
+                <td>2022-07-01</td>
+                <td>17:51:00</td>
+                <td>E FAYETTE ST and N EDEN ST BALTIMORE MD</td>
+                <td>Washington Hill</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221823671/">P221823671</a></td>
+                <td>2022-07-01</td>
+                <td>18:39:00</td>
+                <td>2700 E FEDERAL ST BALTIMORE MD</td>
+                <td>Berea</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221761155/">P221761155</a></td>
+                <td>2022-06-25</td>
+                <td>08:44:00</td>
+                <td>300 S BRUCE ST BALTIMORE MD</td>
+                <td>New Southwest/Mount Clare</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221761675/">P221761675</a></td>
+                <td>2022-06-25</td>
+                <td>11:13:00</td>
+                <td>6500 EBERLE DR BALTIMORE MD</td>
+                <td>Reisterstown Station</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221780445/">P221780445</a></td>
+                <td>2022-06-27</td>
+                <td>02:36:00</td>
+                <td>2400 MARYLAND AV BALTIMORE MD</td>
+                <td>Old Goucher</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221783073/">P221783073</a></td>
+                <td>2022-06-27</td>
+                <td>16:51:00</td>
+                <td>3100 CHESLEY AV BALTIMORE MD</td>
+                <td>North Harford Road</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221790434/">P221790434</a></td>
+                <td>2022-06-28</td>
+                <td>02:19:00</td>
+                <td>2400 MARYLAND AV BALTIMORE MD</td>
+                <td>Old Goucher</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221813646/">P221813646</a></td>
+                <td>2022-06-30</td>
+                <td>18:14:00</td>
+                <td>400 PONTIAC AV BALTIMORE MD</td>
+                <td>Brooklyn</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221820712/">P221820712</a></td>
+                <td>2022-07-01</td>
+                <td>04:02:00</td>
+                <td>1600 E MONUMENT ST BALTIMORE MD</td>
+                <td>Gay Street</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221811416/">P221811416</a></td>
+                <td>2022-06-30</td>
+                <td>09:02:00</td>
+                <td>N PORT ST and E NORTH AV BALTIMORE MD</td>
+                <td>Broadway East</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221812277/">P221812277</a></td>
+                <td>2022-06-30</td>
+                <td>12:16:00</td>
+                <td>E LOMBARD ST and S EATON ST BALTIMORE MD</td>
+                <td>Baltimore Highlands</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221813418/">P221813418</a></td>
+                <td>2022-06-30</td>
+                <td>17:29:00</td>
+                <td>5200 DENMORE AV BALTIMORE MD</td>
+                <td>Arlington</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221820997/">P221820997</a></td>
+                <td>2022-07-01</td>
+                <td>07:05:00</td>
+                <td>700 MCKEWIN AV BALTIMORE MD</td>
+                <td>Waverly</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221822642/">P221822642</a></td>
+                <td>2022-07-01</td>
+                <td>14:56:00</td>
+                <td>300 W PRATT ST BALTIMORE MD</td>
+                <td>Downtown West</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221761177/">P221761177</a></td>
+                <td>2022-06-25</td>
+                <td>08:50:00</td>
+                <td>1800 N CAREY ST BALTIMORE MD</td>
+                <td>Sandtown-Winchester</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221763783/">P221763783</a></td>
+                <td>2022-06-25</td>
+                <td>20:23:00</td>
+                <td>6600 PIONEER DR BALTIMORE MD</td>
+                <td>Hamilton Hills</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221781633/">P221781633</a></td>
+                <td>2022-06-27</td>
+                <td>10:31:00</td>
+                <td>5300 REISTERSTOWN RD BALTIMORE MD</td>
+                <td>Woodmere</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221782309/">P221782309</a></td>
+                <td>2022-06-27</td>
+                <td>13:28:00</td>
+                <td>3600 KENYON AV BALTIMORE MD</td>
+                <td>Belair-Edison</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221783612/">P221783612</a></td>
+                <td>2022-06-27</td>
+                <td>18:41:00</td>
+                <td>2100 N CHARLES ST BALTIMORE MD</td>
+                <td>Charles North</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221784137/">P221784137</a></td>
+                <td>2022-06-27</td>
+                <td>20:50:00</td>
+                <td>HARFORD RD and EVERGREEN AV BALTIMORE MD</td>
+                <td>Hamilton Hills</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221772887/">P221772887</a></td>
+                <td>2022-06-26</td>
+                <td>17:04:00</td>
+                <td>2700 MURA ST BALTIMORE MD</td>
+                <td>Berea</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221773585/">P221773585</a></td>
+                <td>2022-06-26</td>
+                <td>20:08:00</td>
+                <td>NELSON AV and HAYWARD AV BALTIMORE MD</td>
+                <td>Arlington</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221783043/">P221783043</a></td>
+                <td>2022-06-27</td>
+                <td>16:44:00</td>
+                <td>100 N EUTAW ST BALTIMORE MD</td>
+                <td>Downtown</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221802826/">P221802826</a></td>
+                <td>2022-06-29</td>
+                <td>15:33:00</td>
+                <td>1200 N CHARLES ST BALTIMORE MD</td>
+                <td>Mid-Town Belvedere</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221822461/">P221822461</a></td>
+                <td>2022-07-01</td>
+                <td>13:59:00</td>
+                <td>2400 E EAGER ST BALTIMORE MD</td>
+                <td>Milton-Montford</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221762056/">P221762056</a></td>
+                <td>2022-06-25</td>
+                <td>13:10:00</td>
+                <td>2200 N FULTON AV BALTIMORE MD</td>
+                <td>Penn North</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221773153/">P221773153</a></td>
+                <td>2022-06-26</td>
+                <td>18:04:00</td>
+                <td>2700 N HILTON ST BALTIMORE MD</td>
+                <td>Hanlon-Longwood</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221791746/">P221791746</a></td>
+                <td>2022-06-28</td>
+                <td>10:26:00</td>
+                <td>LIGHT RAIL - CHERRY HILL BALTIMORE MD</td>
+                <td>Cherry Hill</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221793347/">P221793347</a></td>
+                <td>2022-06-28</td>
+                <td>17:22:00</td>
+                <td>1700 BLK N BRUCE ST BALTIMORE MD</td>
+                <td>Sandtown-Winchester</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221793363/">P221793363</a></td>
+                <td>2022-06-28</td>
+                <td>17:26:00</td>
+                <td>1700 MCHENRY ST BALTIMORE MD</td>
+                <td>New Southwest/Mount Clare</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221794025/">P221794025</a></td>
+                <td>2022-06-28</td>
+                <td>19:49:00</td>
+                <td>MORAVIA RD and SINCLAIR LN BALTIMORE MD</td>
+                <td>Frankford</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221794356/">P221794356</a></td>
+                <td>2022-06-28</td>
+                <td>21:34:00</td>
+                <td>4800 WILERN AV BALTIMORE MD</td>
+                <td>Central Park Heights</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221802777/">P221802777</a></td>
+                <td>2022-06-29</td>
+                <td>15:24:00</td>
+                <td>1500 N DURHAM ST BALTIMORE MD</td>
+                <td>Broadway East</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221811442/">P221811442</a></td>
+                <td>2022-06-30</td>
+                <td>09:07:00</td>
+                <td>2600 E CHASE ST BALTIMORE MD</td>
+                <td>Biddle Street</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221811862/">P221811862</a></td>
+                <td>2022-06-30</td>
+                <td>10:43:00</td>
+                <td>6500 BROWN AV BALTIMORE MD</td>
+                <td>Broening Manor</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221781789/">P221781789</a></td>
+                <td>2022-06-27</td>
+                <td>11:08:00</td>
+                <td>0 S BROADWAY BALTIMORE MD</td>
+                <td>Washington Hill</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221793187/">P221793187</a></td>
+                <td>2022-06-28</td>
+                <td>16:41:00</td>
+                <td>E 0ST ST and GREENMOUNT AV BALTIMORE MD</td>
+                <td>East Baltimore Midway</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221793304/">P221793304</a></td>
+                <td>2022-06-28</td>
+                <td>17:13:00</td>
+                <td>1800 WASHINGTON BL BALTIMORE MD</td>
+                <td>Carroll - Camden Industrial Area</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221800607/">P221800607</a></td>
+                <td>2022-06-29</td>
+                <td>03:30:00</td>
+                <td>2600 CECIL AV BALTIMORE MD</td>
+                <td>Coldstream Homestead Montebello</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221802463/">P221802463</a></td>
+                <td>2022-06-29</td>
+                <td>13:57:00</td>
+                <td>1900 BLK W LOMBARD ST BALTIMORE MD</td>
+                <td>Carrollton Ridge</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221814085/">P221814085</a></td>
+                <td>2022-06-30</td>
+                <td>19:54:00</td>
+                <td>1700 E 30TH ST BALTIMORE MD</td>
+                <td>Coldstream Homestead Montebello</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221820356/">P221820356</a></td>
+                <td>2022-07-01</td>
+                <td>01:50:00</td>
+                <td>HARMAN AV and WASHINGTON BL BALTIMORE MD</td>
+                <td>Morrell Park</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221823975/">P221823975</a></td>
+                <td>2022-07-01</td>
+                <td>19:52:00</td>
+                <td>1900 N PAYSON ST BALTIMORE MD</td>
+                <td>Mondawmin</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221761423/">P221761423</a></td>
+                <td>2022-06-25</td>
+                <td>10:01:00</td>
+                <td>100 N COLLINGTON AV BALTIMORE MD</td>
+                <td>Butcher&#39;s Hill</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221762309/">P221762309</a></td>
+                <td>2022-06-25</td>
+                <td>14:32:00</td>
+                <td>N EUTAW ST and W SARATOGA ST BALTIMORE MD</td>
+                <td>Downtown</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221770960/">P221770960</a></td>
+                <td>2022-06-26</td>
+                <td>07:07:00</td>
+                <td>2700 MURA ST BALTIMORE MD</td>
+                <td>Berea</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221781780/">P221781780</a></td>
+                <td>2022-06-27</td>
+                <td>11:06:00</td>
+                <td>MOSHER ST and N ARLINGTON AV BALTIMORE MD</td>
+                <td>Sandtown-Winchester</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221791307/">P221791307</a></td>
+                <td>2022-06-28</td>
+                <td>08:39:00</td>
+                <td>METRO STATION - SHOT TOWER BALTIMORE MD</td>
+                <td>Jonestown</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221793359/">P221793359</a></td>
+                <td>2022-06-28</td>
+                <td>17:25:00</td>
+                <td>1700 MCHENRY ST BALTIMORE MD</td>
+                <td>New Southwest/Mount Clare</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221814389/">P221814389</a></td>
+                <td>2022-06-30</td>
+                <td>21:05:00</td>
+                <td>200 N DALLAS CT BALTIMORE MD</td>
+                <td>Dunbar-Broadway</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221761118/">P221761118</a></td>
+                <td>2022-06-25</td>
+                <td>08:29:00</td>
+                <td>2400 WOODBROOK AV BALTIMORE MD</td>
+                <td>Penn North</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221763255/">P221763255</a></td>
+                <td>2022-06-25</td>
+                <td>18:15:00</td>
+                <td>6500 BROWN AV BALTIMORE MD</td>
+                <td>Broening Manor</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221771782/">P221771782</a></td>
+                <td>2022-06-26</td>
+                <td>11:44:00</td>
+                <td>2600 WILKENS AV BALTIMORE MD</td>
+                <td>Millhill</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221772368/">P221772368</a></td>
+                <td>2022-06-26</td>
+                <td>15:02:00</td>
+                <td>4200 LABYRINTH RD BALTIMORE MD</td>
+                <td>Reisterstown Station</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221781138/">P221781138</a></td>
+                <td>2022-06-27</td>
+                <td>08:22:00</td>
+                <td>3600 POTEE ST BALTIMORE MD</td>
+                <td>Brooklyn</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221792720/">P221792720</a></td>
+                <td>2022-06-28</td>
+                <td>14:38:00</td>
+                <td>6500 EASTERN AV BALTIMORE MD</td>
+                <td>Pulaski Industrial Area</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221793349/">P221793349</a></td>
+                <td>2022-06-28</td>
+                <td>17:24:00</td>
+                <td>3700 COTTAGE AV BALTIMORE MD</td>
+                <td>Park Circle</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221814668/">P221814668</a></td>
+                <td>2022-06-30</td>
+                <td>22:22:00</td>
+                <td>E NORTH AV and N CHARLES ST BALTIMORE MD</td>
+                <td>Charles North</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221822370/">P221822370</a></td>
+                <td>2022-07-01</td>
+                <td>13:33:00</td>
+                <td>1100 N CALVERT ST BALTIMORE MD</td>
+                <td>Mid-Town Belvedere</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221822399/">P221822399</a></td>
+                <td>2022-07-01</td>
+                <td>13:39:00</td>
+                <td>4400 SHAMROCK AV BALTIMORE MD</td>
+                <td>Parkside</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221763357/">P221763357</a></td>
+                <td>2022-06-25</td>
+                <td>18:37:00</td>
+                <td>4300 ORCHARD RIDGE BL BALTIMORE MD</td>
+                <td>Orchard Ridge</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221770878/">P221770878</a></td>
+                <td>2022-06-26</td>
+                <td>05:48:00</td>
+                <td>400 S WOLFE ST BALTIMORE MD</td>
+                <td>Upper Fells Point</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221780116/">P221780116</a></td>
+                <td>2022-06-27</td>
+                <td>00:40:00</td>
+                <td>HAYWARD AV and REISTERSTOWN RD BALTIMORE MD</td>
+                <td>Woodmere</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221783923/">P221783923</a></td>
+                <td>2022-06-27</td>
+                <td>19:52:00</td>
+                <td>5400 CORDELIA AV BALTIMORE MD</td>
+                <td>Arlington</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221800807/">P221800807</a></td>
+                <td>2022-06-29</td>
+                <td>05:33:00</td>
+                <td>4300 ORCHARD RIDGE BL BALTIMORE MD</td>
+                <td>Orchard Ridge</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221804026/">P221804026</a></td>
+                <td>2022-06-29</td>
+                <td>20:05:00</td>
+                <td>5000 CLIFTON AV BALTIMORE MD</td>
+                <td>Franklintown</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221814122/">P221814122</a></td>
+                <td>2022-06-30</td>
+                <td>20:03:00</td>
+                <td>100 S CURLEY ST BALTIMORE MD</td>
+                <td>Patterson Park Neighborhood</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221820964/">P221820964</a></td>
+                <td>2022-07-01</td>
+                <td>06:31:00</td>
+                <td>200 S ROBINSON ST BALTIMORE MD</td>
+                <td>Highlandtown</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221761909/">P221761909</a></td>
+                <td>2022-06-25</td>
+                <td>12:20:00</td>
+                <td>6000 BELAIR RD BALTIMORE MD</td>
+                <td>Glenham-Belhar</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221781976/">P221781976</a></td>
+                <td>2022-06-27</td>
+                <td>12:03:00</td>
+                <td>3600 CLARKS LN BALTIMORE MD</td>
+                <td>Glen</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221790344/">P221790344</a></td>
+                <td>2022-06-28</td>
+                <td>01:43:00</td>
+                <td>4600 KERNWOOD AV BALTIMORE MD</td>
+                <td>Kernewood</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221793471/">P221793471</a></td>
+                <td>2022-06-28</td>
+                <td>17:49:00</td>
+                <td>1600 E OLIVER ST BALTIMORE MD</td>
+                <td>Oliver</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221811850/">P221811850</a></td>
+                <td>2022-06-30</td>
+                <td>10:38:00</td>
+                <td>300 BLK S CALHOUN ST BALTIMORE MD</td>
+                <td>New Southwest/Mount Clare</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221812455/">P221812455</a></td>
+                <td>2022-06-30</td>
+                <td>13:07:00</td>
+                <td>METRO STATION - ROGERS AV BALTIMORE MD</td>
+                <td>Woodmere</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221813830/">P221813830</a></td>
+                <td>2022-06-30</td>
+                <td>18:57:00</td>
+                <td>1200 BLK N WOODYEAR ST BALTIMORE MD</td>
+                <td>Sandtown-Winchester</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221820986/">P221820986</a></td>
+                <td>2022-07-01</td>
+                <td>06:55:00</td>
+                <td>N FREMONT AV and LAURENS ST BALTIMORE MD</td>
+                <td>Upton</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221821090/">P221821090</a></td>
+                <td>2022-07-01</td>
+                <td>07:48:00</td>
+                <td>1400 N MONTFORD AV BALTIMORE MD</td>
+                <td>Broadway East</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221821321/">P221821321</a></td>
+                <td>2022-07-01</td>
+                <td>08:52:00</td>
+                <td>1100 ABBOTT CT BALTIMORE MD</td>
+                <td>Oldtown</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221762263/">P221762263</a></td>
+                <td>2022-06-25</td>
+                <td>14:15:00</td>
+                <td>2300 N CHARLES ST BALTIMORE MD</td>
+                <td>Old Goucher</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221762789/">P221762789</a></td>
+                <td>2022-06-25</td>
+                <td>16:27:00</td>
+                <td>2500 WASHINGTON BL BALTIMORE MD</td>
+                <td>Morrell Park</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221781361/">P221781361</a></td>
+                <td>2022-06-27</td>
+                <td>09:24:00</td>
+                <td>3600 FAIRVIEW AV BALTIMORE MD</td>
+                <td>Forest Park</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221784387/">P221784387</a></td>
+                <td>2022-06-27</td>
+                <td>22:08:00</td>
+                <td>0 E FRANKLIN ST BALTIMORE MD</td>
+                <td>Mount Vernon</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221793147/">P221793147</a></td>
+                <td>2022-06-28</td>
+                <td>16:38:00</td>
+                <td>1600 W NORTH AV BALTIMORE MD</td>
+                <td>Penn North</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221793481/">P221793481</a></td>
+                <td>2022-06-28</td>
+                <td>17:53:00</td>
+                <td>300 S MOUNT ST BALTIMORE MD</td>
+                <td>New Southwest/Mount Clare</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221802462/">P221802462</a></td>
+                <td>2022-06-29</td>
+                <td>13:58:00</td>
+                <td>3400 MAYFIELD AV BALTIMORE MD</td>
+                <td>Belair-Edison</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221761565/">P221761565</a></td>
+                <td>2022-06-25</td>
+                <td>10:40:00</td>
+                <td>6300 WABASH AV BALTIMORE MD</td>
+                <td>Reisterstown Station</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221763934/">P221763934</a></td>
+                <td>2022-06-25</td>
+                <td>20:59:00</td>
+                <td>5400 GERLAND AV BALTIMORE MD</td>
+                <td>Frankford</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221771924/">P221771924</a></td>
+                <td>2022-06-26</td>
+                <td>12:26:00</td>
+                <td>3700 EGERTON RD BALTIMORE MD</td>
+                <td>Callaway-Garrison</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221772340/">P221772340</a></td>
+                <td>2022-06-26</td>
+                <td>14:52:00</td>
+                <td>800 W LEXINGTON ST BALTIMORE MD</td>
+                <td>Poppleton</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221782719/">P221782719</a></td>
+                <td>2022-06-27</td>
+                <td>15:33:00</td>
+                <td>3600 RAVENWOOD AV BALTIMORE MD</td>
+                <td>Belair-Edison</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221784452/">P221784452</a></td>
+                <td>2022-06-27</td>
+                <td>22:43:00</td>
+                <td>1500 OAKRIDGE RD BALTIMORE MD</td>
+                <td>Ednor Gardens-Lakeside</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221792784/">P221792784</a></td>
+                <td>2022-06-28</td>
+                <td>15:01:00</td>
+                <td>1800 N WOLFE ST BALTIMORE MD</td>
+                <td>Broadway East</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221792909/">P221792909</a></td>
+                <td>2022-06-28</td>
+                <td>15:33:00</td>
+                <td>300 BLK W LEXINGTON ST BALTIMORE MD</td>
+                <td>Downtown</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221794198/">P221794198</a></td>
+                <td>2022-06-28</td>
+                <td>20:43:00</td>
+                <td>N FRANKLINTOWN RD and W FAIRMOUNT AV BALTIMORE MD</td>
+                <td>Shipley Hill</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221803181/">P221803181</a></td>
+                <td>2022-06-29</td>
+                <td>16:48:00</td>
+                <td>6600 HOLABIRD AV BALTIMORE MD</td>
+                <td>Broening Manor</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221822425/">P221822425</a></td>
+                <td>2022-07-01</td>
+                <td>13:49:00</td>
+                <td>300 N EUTAW ST BALTIMORE MD</td>
+                <td>Downtown</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221760176/">P221760176</a></td>
+                <td>2022-06-25</td>
+                <td>00:51:00</td>
+                <td>2500 BLK WILKENS AV BALTIMORE MD</td>
+                <td>Millhill</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221763106/">P221763106</a></td>
+                <td>2022-06-25</td>
+                <td>17:38:00</td>
+                <td>0 N EUTAW ST BALTIMORE MD</td>
+                <td>Downtown</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221770117/">P221770117</a></td>
+                <td>2022-06-26</td>
+                <td>00:28:00</td>
+                <td>1700 N CHARLES ST BALTIMORE MD</td>
+                <td>Charles North</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221771154/">P221771154</a></td>
+                <td>2022-06-26</td>
+                <td>08:44:00</td>
+                <td>METRO STATION - CHARLES CENTER EAST BALTIMORE MD</td>
+                <td>Downtown</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221772007/">P221772007</a></td>
+                <td>2022-06-26</td>
+                <td>12:54:00</td>
+                <td>PARK HEIGHTS AV and SPAULDING AV BALTIMORE MD</td>
+                <td>Central Park Heights</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221773668/">P221773668</a></td>
+                <td>2022-06-26</td>
+                <td>20:33:00</td>
+                <td>1600 N ROSEDALE ST BALTIMORE MD</td>
+                <td>Rosemont</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221803083/">P221803083</a></td>
+                <td>2022-06-29</td>
+                <td>16:29:00</td>
+                <td>1600 N WOLFE ST BALTIMORE MD</td>
+                <td>Broadway East</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221813365/">P221813365</a></td>
+                <td>2022-06-30</td>
+                <td>17:15:00</td>
+                <td>2400 WOODBROOK AV BALTIMORE MD</td>
+                <td>Penn North</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221822244/">P221822244</a></td>
+                <td>2022-07-01</td>
+                <td>12:57:00</td>
+                <td>NORFOLK AV and OAKFIELD AV BALTIMORE MD</td>
+                <td>Concerned Citizens Of Forest Park</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221760730/">P221760730</a></td>
+                <td>2022-06-25</td>
+                <td>04:12:00</td>
+                <td>2100 WALBROOK AV BALTIMORE MD</td>
+                <td>Mondawmin</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221761169/">P221761169</a></td>
+                <td>2022-06-25</td>
+                <td>08:48:00</td>
+                <td>1500 N FREMONT AV BALTIMORE MD</td>
+                <td>Upton</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221763689/">P221763689</a></td>
+                <td>2022-06-25</td>
+                <td>19:56:00</td>
+                <td>0 S BROADWAY BALTIMORE MD</td>
+                <td>Washington Hill</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221784021/">P221784021</a></td>
+                <td>2022-06-27</td>
+                <td>20:17:00</td>
+                <td>1300 DUNDALK AV BALTIMORE MD</td>
+                <td>Graceland Park</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221791394/">P221791394</a></td>
+                <td>2022-06-28</td>
+                <td>09:03:00</td>
+                <td>1400 W NORTH AV BALTIMORE MD</td>
+                <td>Penn North</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221791594/">P221791594</a></td>
+                <td>2022-06-28</td>
+                <td>09:48:00</td>
+                <td>500 CUMBERLAND ST BALTIMORE MD</td>
+                <td>Druid Heights</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221794527/">P221794527</a></td>
+                <td>2022-06-28</td>
+                <td>22:48:00</td>
+                <td>700 WASHINGTON BL BALTIMORE MD</td>
+                <td>Washington Village/Pigtown</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221811723/">P221811723</a></td>
+                <td>2022-06-30</td>
+                <td>10:09:00</td>
+                <td>200 N CHARLES ST BALTIMORE MD</td>
+                <td>Downtown</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221823398/">P221823398</a></td>
+                <td>2022-07-01</td>
+                <td>17:46:00</td>
+                <td>1400 E FAYETTE ST BALTIMORE MD</td>
+                <td>Dunbar-Broadway</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221824232/">P221824232</a></td>
+                <td>2022-07-01</td>
+                <td>20:48:00</td>
+                <td>300 BLK N POPPLETON ST BALTIMORE MD</td>
+                <td>Poppleton</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221804286/">P221804286</a></td>
+                <td>2022-06-29</td>
+                <td>21:08:00</td>
+                <td>GWYNNS FALLS PY and KOKO LN BALTIMORE MD</td>
+                <td>Hanlon-Longwood</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221820420/">P221820420</a></td>
+                <td>2022-07-01</td>
+                <td>02:10:00</td>
+                <td>1700 W PRATT ST BALTIMORE MD</td>
+                <td>New Southwest/Mount Clare</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221770283/">P221770283</a></td>
+                <td>2022-06-26</td>
+                <td>01:20:00</td>
+                <td>2300 E MADISON ST BALTIMORE MD</td>
+                <td>Milton-Montford</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221784556/">P221784556</a></td>
+                <td>2022-06-27</td>
+                <td>23:29:00</td>
+                <td>900 WILMOT CT BALTIMORE MD</td>
+                <td>Oldtown</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221821994/">P221821994</a></td>
+                <td>2022-07-01</td>
+                <td>11:53:00</td>
+                <td>5100 REISTERSTOWN RD BALTIMORE MD</td>
+                <td>Woodmere</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221763272/">P221763272</a></td>
+                <td>2022-06-25</td>
+                <td>18:21:00</td>
+                <td>5200 REISTERSTOWN RD BALTIMORE MD</td>
+                <td>Woodmere</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221764233/">P221764233</a></td>
+                <td>2022-06-25</td>
+                <td>22:45:00</td>
+                <td>S MOUNT ST and WILKENS AV BALTIMORE MD</td>
+                <td>New Southwest/Mount Clare</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221771687/">P221771687</a></td>
+                <td>2022-06-26</td>
+                <td>11:14:00</td>
+                <td>500 S PAYSON ST BALTIMORE MD</td>
+                <td>Carrollton Ridge</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221772423/">P221772423</a></td>
+                <td>2022-06-26</td>
+                <td>15:21:00</td>
+                <td>4200 LABYRINTH RD BALTIMORE MD</td>
+                <td>Reisterstown Station</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221791758/">P221791758</a></td>
+                <td>2022-06-28</td>
+                <td>10:33:00</td>
+                <td>1200 E NORTH AV BALTIMORE MD</td>
+                <td>East Baltimore Midway</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221793318/">P221793318</a></td>
+                <td>2022-06-28</td>
+                <td>17:19:00</td>
+                <td>1800 WASHINGTON BL BALTIMORE MD</td>
+                <td>Carroll - Camden Industrial Area</td>
+            </tr>
+            
+            <tr>
+                <td><a href="P221793678/">P221793678</a></td>
+                <td>2022-06-28</td>
+                <td>18:38:00</td>
+                <td>E OLIVER ST and N LAKEWOOD AV BALTIMORE MD</td>
+                <td>Berea</td>
+            </tr>
+            
+        </table>
+        <script>
+        var map = L.map('map').setView([39.3, -76.5], 11);
+        var osmLayer = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 18,
+            attribution: 'Data, imagery and map information provided by <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a>.'
+        });
+        map.addLayer(osmLayer);
+        function onEachFeature(feature, layer) {
+            // does this feature have a property named popupContent?
+            if (feature.properties && feature.properties.popupContent) {
+                layer.bindPopup('<a href="'+ feature.properties.id + '/">' + feature.properties.popupContent + '</a>');
+            }
+        }
+        var data = [
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "EDMONDSON AV and POPLAR GROVE ST BALTIMORE MD",
+                "id": "P221761572",
+                "popupContent": "EDMONDSON AV/POPLAR GROVE ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.664775, 39.294512]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "2400 BLK BRENTWOOD AV BALTIMORE MD",
+                "id": "P221800526",
+                "popupContent": "2400 BLK BRENTWOOD AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.649533, 39.319732]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "3700 W BELVEDERE AV BALTIMORE MD",
+                "id": "P221801774",
+                "popupContent": "3700 W BELVEDERE AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.680555, 39.346427]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1500 WASHINGTON BL BALTIMORE MD",
+                "id": "P221820832",
+                "popupContent": "1500 WASHINGTON BL",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.641783, 39.279149]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "SHOPPERS BALTIMORE MD",
+                "id": "P221823084",
+                "popupContent": "SHOPPERS",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.634044, 39.3549]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "100 E FAYETTE ST BALTIMORE MD",
+                "id": "P221824123",
+                "popupContent": "100 E FAYETTE ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.613901, 39.290489]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "2700 BLK GREENMOUNT AV BALTIMORE MD",
+                "id": "P221762334",
+                "popupContent": "2700 BLK GREENMOUNT AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.649533, 39.319732]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "W SARATOGA ST and N PACA ST BALTIMORE MD",
+                "id": "P221791129",
+                "popupContent": "W SARATOGA ST/N PACA ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.649533, 39.319732]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1200 EDMONDSON AV BALTIMORE MD",
+                "id": "P221792137",
+                "popupContent": "1200 EDMONDSON AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.637631, 39.295662]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "5200 EASTERN AV BALTIMORE MD",
+                "id": "P221802336",
+                "popupContent": "5200 EASTERN AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.5520887, 39.2871997]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "4700 BLK BEAUFORT AV BALTIMORE MD",
+                "id": "P221802828",
+                "popupContent": "4700 BLK BEAUFORT AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.649533, 39.319732]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "300 W PRATT ST BALTIMORE MD",
+                "id": "P221822683",
+                "popupContent": "300 W PRATT ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.619665, 39.286689]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "200 N DECKER AV BALTIMORE MD",
+                "id": "P221823347",
+                "popupContent": "200 N DECKER AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.5742095, 39.294719]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1800 N WOLFE ST BALTIMORE MD",
+                "id": "P221792608",
+                "popupContent": "1800 N WOLFE ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.591919, 39.311119]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "4000 SPRUCE DR BALTIMORE MD",
+                "id": "P221811192",
+                "popupContent": "4000 SPRUCE DR",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.657517, 39.336565]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "2900 W MULBERRY ST BALTIMORE MD",
+                "id": "P221822062",
+                "popupContent": "2900 W MULBERRY ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.664819, 39.292613]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "500 S BENTALOU ST BALTIMORE MD",
+                "id": "P221823115",
+                "popupContent": "500 S BENTALOU ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.652696, 39.281271]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "2200 ROSLYN AV BALTIMORE MD",
+                "id": "P221760280",
+                "popupContent": "2200 ROSLYN AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.677161, 39.312024]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "5000 DENVIEW WY BALTIMORE MD",
+                "id": "P221762942",
+                "popupContent": "5000 DENVIEW WY",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.534385, 39.324531]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "6600 PIONEER DR BALTIMORE MD",
+                "id": "P221763914",
+                "popupContent": "6600 PIONEER DR",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.5725964, 39.3668148]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1400 BLK N ROSE ST BALTIMORE MD",
+                "id": "P221773224",
+                "popupContent": "1400 BLK N ROSE ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.649533, 39.319732]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "W NORTHERN PY and PARK HEIGHTS AV BALTIMORE MD",
+                "id": "P221793674",
+                "popupContent": "W NORTHERN PY/PARK HEIGHTS AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.673383, 39.347234]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "E NORTH AV and AISQUITH ST BALTIMORE MD",
+                "id": "P221813140",
+                "popupContent": "E NORTH AV/AISQUITH ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.649533, 39.319732]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "5500 PARK HEIGHTS AV BALTIMORE MD",
+                "id": "P221814759",
+                "popupContent": "5500 PARK HEIGHTS AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.683876, 39.351648]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "HARFORD RD and BONAPARTE AV BALTIMORE MD",
+                "id": "P221823004",
+                "popupContent": "HARFORD RD/BONAPARTE AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.597928, 39.314381]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "E FAYETTE ST and N EDEN ST BALTIMORE MD",
+                "id": "P221823428",
+                "popupContent": "E FAYETTE ST/N EDEN ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.649533, 39.319732]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "2700 E FEDERAL ST BALTIMORE MD",
+                "id": "P221823671",
+                "popupContent": "2700 E FEDERAL ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.579926, 39.309346]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "300 S BRUCE ST BALTIMORE MD",
+                "id": "P221761155",
+                "popupContent": "300 S BRUCE ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.644267, 39.284346]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "6500 EBERLE DR BALTIMORE MD",
+                "id": "P221761675",
+                "popupContent": "6500 EBERLE DR",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.705989, 39.353333]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "2400 MARYLAND AV BALTIMORE MD",
+                "id": "P221780445",
+                "popupContent": "2400 MARYLAND AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.618272, 39.316295]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "3100 CHESLEY AV BALTIMORE MD",
+                "id": "P221783073",
+                "popupContent": "3100 CHESLEY AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.547287, 39.365004]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "2400 MARYLAND AV BALTIMORE MD",
+                "id": "P221790434",
+                "popupContent": "2400 MARYLAND AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.618272, 39.316295]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "400 PONTIAC AV BALTIMORE MD",
+                "id": "P221813646",
+                "popupContent": "400 PONTIAC AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.605313, 39.236333]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1600 E MONUMENT ST BALTIMORE MD",
+                "id": "P221820712",
+                "popupContent": "1600 E MONUMENT ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.595903, 39.298445]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "N PORT ST and E NORTH AV BALTIMORE MD",
+                "id": "P221811416",
+                "popupContent": "N PORT ST/E NORTH AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.649533, 39.319732]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "E LOMBARD ST and S EATON ST BALTIMORE MD",
+                "id": "P221812277",
+                "popupContent": "E LOMBARD ST/S EATON ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.649533, 39.319732]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "5200 DENMORE AV BALTIMORE MD",
+                "id": "P221813418",
+                "popupContent": "5200 DENMORE AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.678189, 39.348646]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "700 MCKEWIN AV BALTIMORE MD",
+                "id": "P221820997",
+                "popupContent": "700 MCKEWIN AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.605904, 39.333038]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "300 W PRATT ST BALTIMORE MD",
+                "id": "P221822642",
+                "popupContent": "300 W PRATT ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.619665, 39.286689]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1800 N CAREY ST BALTIMORE MD",
+                "id": "P221761177",
+                "popupContent": "1800 N CAREY ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.643827, 39.309433]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "6600 PIONEER DR BALTIMORE MD",
+                "id": "P221763783",
+                "popupContent": "6600 PIONEER DR",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.5725964, 39.3668148]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "5300 REISTERSTOWN RD BALTIMORE MD",
+                "id": "P221781633",
+                "popupContent": "5300 REISTERSTOWN RD",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.686847, 39.34481]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "3600 KENYON AV BALTIMORE MD",
+                "id": "P221782309",
+                "popupContent": "3600 KENYON AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.56245, 39.319685]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "2100 N CHARLES ST BALTIMORE MD",
+                "id": "P221783612",
+                "popupContent": "2100 N CHARLES ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.616721, 39.31323]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "HARFORD RD and EVERGREEN AV BALTIMORE MD",
+                "id": "P221784137",
+                "popupContent": "HARFORD RD/EVERGREEN AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.567699, 39.344853]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "2700 MURA ST BALTIMORE MD",
+                "id": "P221772887",
+                "popupContent": "2700 MURA ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.579708, 39.305543]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "NELSON AV and HAYWARD AV BALTIMORE MD",
+                "id": "P221773585",
+                "popupContent": "NELSON AV/HAYWARD AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.678594, 39.349935]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "100 N EUTAW ST BALTIMORE MD",
+                "id": "P221783043",
+                "popupContent": "100 N EUTAW ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.62142, 39.290572]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1200 N CHARLES ST BALTIMORE MD",
+                "id": "P221802826",
+                "popupContent": "1200 N CHARLES ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.616257, 39.303537]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "2400 E EAGER ST BALTIMORE MD",
+                "id": "P221822461",
+                "popupContent": "2400 E EAGER ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.583794, 39.301974]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "2200 N FULTON AV BALTIMORE MD",
+                "id": "P221762056",
+                "popupContent": "2200 N FULTON AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.646176, 39.313587]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "2700 N HILTON ST BALTIMORE MD",
+                "id": "P221773153",
+                "popupContent": "2700 N HILTON ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.67292, 39.318419]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "LIGHT RAIL - CHERRY HILL BALTIMORE MD",
+                "id": "P221791746",
+                "popupContent": "LIGHT RAIL - CHERRY HILL",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.634373, 39.255669]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1700 BLK N BRUCE ST BALTIMORE MD",
+                "id": "P221793347",
+                "popupContent": "1700 BLK N BRUCE ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.649533, 39.319732]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1700 MCHENRY ST BALTIMORE MD",
+                "id": "P221793363",
+                "popupContent": "1700 MCHENRY ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.644102, 39.284738]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "MORAVIA RD and SINCLAIR LN BALTIMORE MD",
+                "id": "P221794025",
+                "popupContent": "MORAVIA RD/SINCLAIR LN",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.649533, 39.319732]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "4800 WILERN AV BALTIMORE MD",
+                "id": "P221794356",
+                "popupContent": "4800 WILERN AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.674637, 39.344081]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1500 N DURHAM ST BALTIMORE MD",
+                "id": "P221802777",
+                "popupContent": "1500 N DURHAM ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.592272, 39.307912]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "2600 E CHASE ST BALTIMORE MD",
+                "id": "P221811442",
+                "popupContent": "2600 E CHASE ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.581036, 39.303938]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "6500 BROWN AV BALTIMORE MD",
+                "id": "P221811862",
+                "popupContent": "6500 BROWN AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.535915, 39.273829]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "0 S BROADWAY BALTIMORE MD",
+                "id": "P221781789",
+                "popupContent": "0 S BROADWAY",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.5929, 39.28221]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "E 0ST ST and GREENMOUNT AV BALTIMORE MD",
+                "id": "P221793187",
+                "popupContent": "E 0ST ST/GREENMOUNT AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.649533, 39.319732]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1800 WASHINGTON BL BALTIMORE MD",
+                "id": "P221793304",
+                "popupContent": "1800 WASHINGTON BL",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.644748, 39.276296]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "2600 CECIL AV BALTIMORE MD",
+                "id": "P221800607",
+                "popupContent": "2600 CECIL AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.598787, 39.320442]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1900 BLK W LOMBARD ST BALTIMORE MD",
+                "id": "P221802463",
+                "popupContent": "1900 BLK W LOMBARD ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.649533, 39.319732]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1700 E 30TH ST BALTIMORE MD",
+                "id": "P221814085",
+                "popupContent": "1700 E 30TH ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.59181, 39.325562]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "HARMAN AV and WASHINGTON BL BALTIMORE MD",
+                "id": "P221820356",
+                "popupContent": "HARMAN AV/WASHINGTON BL",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.650517, 39.268304]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1900 N PAYSON ST BALTIMORE MD",
+                "id": "P221823975",
+                "popupContent": "1900 N PAYSON ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.650184, 39.310075]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "100 N COLLINGTON AV BALTIMORE MD",
+                "id": "P221761423",
+                "popupContent": "100 N COLLINGTON AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.586491, 39.2932]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "N EUTAW ST and W SARATOGA ST BALTIMORE MD",
+                "id": "P221762309",
+                "popupContent": "N EUTAW ST/W SARATOGA ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.649533, 39.319732]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "2700 MURA ST BALTIMORE MD",
+                "id": "P221770960",
+                "popupContent": "2700 MURA ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.579708, 39.305543]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "MOSHER ST and N ARLINGTON AV BALTIMORE MD",
+                "id": "P221781780",
+                "popupContent": "MOSHER ST/N ARLINGTON AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-82.64962, 27.772552]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "METRO STATION - SHOT TOWER BALTIMORE MD",
+                "id": "P221791307",
+                "popupContent": "METRO STATION - SHOT TOWER",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-97.386807, 35.467088]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1700 MCHENRY ST BALTIMORE MD",
+                "id": "P221793359",
+                "popupContent": "1700 MCHENRY ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.644102, 39.284738]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "200 N DALLAS CT BALTIMORE MD",
+                "id": "P221814389",
+                "popupContent": "200 N DALLAS CT",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.596236, 39.293515]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "2400 WOODBROOK AV BALTIMORE MD",
+                "id": "P221761118",
+                "popupContent": "2400 WOODBROOK AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.641168, 39.310145]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "6500 BROWN AV BALTIMORE MD",
+                "id": "P221763255",
+                "popupContent": "6500 BROWN AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.535915, 39.273829]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "2600 WILKENS AV BALTIMORE MD",
+                "id": "P221771782",
+                "popupContent": "2600 WILKENS AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.656875, 39.279152]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "4200 LABYRINTH RD BALTIMORE MD",
+                "id": "P221772368",
+                "popupContent": "4200 LABYRINTH RD",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.70942, 39.358577]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "3600 POTEE ST BALTIMORE MD",
+                "id": "P221781138",
+                "popupContent": "3600 POTEE ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.61104, 39.23897]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "6500 EASTERN AV BALTIMORE MD",
+                "id": "P221792720",
+                "popupContent": "6500 EASTERN AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.536199, 39.28895]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "3700 COTTAGE AV BALTIMORE MD",
+                "id": "P221793349",
+                "popupContent": "3700 COTTAGE AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.658944, 39.331499]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "E NORTH AV and N CHARLES ST BALTIMORE MD",
+                "id": "P221814668",
+                "popupContent": "E NORTH AV/N CHARLES ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.616432, 39.310674]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1100 N CALVERT ST BALTIMORE MD",
+                "id": "P221822370",
+                "popupContent": "1100 N CALVERT ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.613556, 39.302767]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "4400 SHAMROCK AV BALTIMORE MD",
+                "id": "P221822399",
+                "popupContent": "4400 SHAMROCK AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.561268, 39.325377]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "4300 ORCHARD RIDGE BL BALTIMORE MD",
+                "id": "P221763357",
+                "popupContent": "4300 ORCHARD RIDGE BL",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.558342, 39.313983]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "400 S WOLFE ST BALTIMORE MD",
+                "id": "P221770878",
+                "popupContent": "400 S WOLFE ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.590361, 39.286487]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "HAYWARD AV and REISTERSTOWN RD BALTIMORE MD",
+                "id": "P221780116",
+                "popupContent": "HAYWARD AV/REISTERSTOWN RD",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.649533, 39.319732]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "5400 CORDELIA AV BALTIMORE MD",
+                "id": "P221783923",
+                "popupContent": "5400 CORDELIA AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.682618, 39.346687]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "4300 ORCHARD RIDGE BL BALTIMORE MD",
+                "id": "P221800807",
+                "popupContent": "4300 ORCHARD RIDGE BL",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.558342, 39.313983]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "5000 CLIFTON AV BALTIMORE MD",
+                "id": "P221804026",
+                "popupContent": "5000 CLIFTON AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.7057379, 39.3062897]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "100 S CURLEY ST BALTIMORE MD",
+                "id": "P221814122",
+                "popupContent": "100 S CURLEY ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.575557, 39.290988]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "200 S ROBINSON ST BALTIMORE MD",
+                "id": "P221820964",
+                "popupContent": "200 S ROBINSON ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.572651, 39.289966]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "6000 BELAIR RD BALTIMORE MD",
+                "id": "P221761909",
+                "popupContent": "6000 BELAIR RD",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.538686, 39.348355]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "3600 CLARKS LN BALTIMORE MD",
+                "id": "P221781976",
+                "popupContent": "3600 CLARKS LN",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.700645, 39.3621]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "4600 KERNWOOD AV BALTIMORE MD",
+                "id": "P221790344",
+                "popupContent": "4600 KERNWOOD AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.610672, 39.34482]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1600 E OLIVER ST BALTIMORE MD",
+                "id": "P221793471",
+                "popupContent": "1600 E OLIVER ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.596325, 39.307609]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "300 BLK S CALHOUN ST BALTIMORE MD",
+                "id": "P221811850",
+                "popupContent": "300 BLK S CALHOUN ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.649533, 39.319732]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "METRO STATION - ROGERS AV BALTIMORE MD",
+                "id": "P221812455",
+                "popupContent": "METRO STATION - ROGERS AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.636959, 39.24572]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1200 BLK N WOODYEAR ST BALTIMORE MD",
+                "id": "P221813830",
+                "popupContent": "1200 BLK N WOODYEAR ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.649533, 39.319732]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "N FREMONT AV and LAURENS ST BALTIMORE MD",
+                "id": "P221820986",
+                "popupContent": "N FREMONT AV/LAURENS ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.649533, 39.319732]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1400 N MONTFORD AV BALTIMORE MD",
+                "id": "P221821090",
+                "popupContent": "1400 N MONTFORD AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.584464, 39.307157]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1100 ABBOTT CT BALTIMORE MD",
+                "id": "P221821321",
+                "popupContent": "1100 ABBOTT CT",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.602718, 39.30139]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "2300 N CHARLES ST BALTIMORE MD",
+                "id": "P221762263",
+                "popupContent": "2300 N CHARLES ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.617216, 39.315404]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "2500 WASHINGTON BL BALTIMORE MD",
+                "id": "P221762789",
+                "popupContent": "2500 WASHINGTON BL",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.652497, 39.266949]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "3600 FAIRVIEW AV BALTIMORE MD",
+                "id": "P221781361",
+                "popupContent": "3600 FAIRVIEW AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.677945, 39.323159]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "0 E FRANKLIN ST BALTIMORE MD",
+                "id": "P221784387",
+                "popupContent": "0 E FRANKLIN ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.613235, 39.295196]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1600 W NORTH AV BALTIMORE MD",
+                "id": "P221793147",
+                "popupContent": "1600 W NORTH AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.643419, 39.310238]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "300 S MOUNT ST BALTIMORE MD",
+                "id": "P221793481",
+                "popupContent": "300 S MOUNT ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.643573, 39.284366]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "3400 MAYFIELD AV BALTIMORE MD",
+                "id": "P221802462",
+                "popupContent": "3400 MAYFIELD AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.569497, 39.320449000000004]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "6300 WABASH AV BALTIMORE MD",
+                "id": "P221761565",
+                "popupContent": "6300 WABASH AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.706611, 39.351104]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "5400 GERLAND AV BALTIMORE MD",
+                "id": "P221763934",
+                "popupContent": "5400 GERLAND AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.545072, 39.33283]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "3700 EGERTON RD BALTIMORE MD",
+                "id": "P221771924",
+                "popupContent": "3700 EGERTON RD",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.679017, 39.327742]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "800 W LEXINGTON ST BALTIMORE MD",
+                "id": "P221772340",
+                "popupContent": "800 W LEXINGTON ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.630469, 39.291106]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "3600 RAVENWOOD AV BALTIMORE MD",
+                "id": "P221782719",
+                "popupContent": "3600 RAVENWOOD AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.568001, 39.315375]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1500 OAKRIDGE RD BALTIMORE MD",
+                "id": "P221784452",
+                "popupContent": "1500 OAKRIDGE RD",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.59452, 39.333359]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1800 N WOLFE ST BALTIMORE MD",
+                "id": "P221792784",
+                "popupContent": "1800 N WOLFE ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.591919, 39.311119]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "300 BLK W LEXINGTON ST BALTIMORE MD",
+                "id": "P221792909",
+                "popupContent": "300 BLK W LEXINGTON ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.649533, 39.319732]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "N FRANKLINTOWN RD and W FAIRMOUNT AV BALTIMORE MD",
+                "id": "P221794198",
+                "popupContent": "N FRANKLINTOWN RD/W FAIRMOUNT AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.649533, 39.319732]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "6600 HOLABIRD AV BALTIMORE MD",
+                "id": "P221803181",
+                "popupContent": "6600 HOLABIRD AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.533652, 39.272713]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "300 N EUTAW ST BALTIMORE MD",
+                "id": "P221822425",
+                "popupContent": "300 N EUTAW ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.621372, 39.293024]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "2500 BLK WILKENS AV BALTIMORE MD",
+                "id": "P221760176",
+                "popupContent": "2500 BLK WILKENS AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.649533, 39.319732]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "0 N EUTAW ST BALTIMORE MD",
+                "id": "P221763106",
+                "popupContent": "0 N EUTAW ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.621213, 39.293703]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1700 N CHARLES ST BALTIMORE MD",
+                "id": "P221770117",
+                "popupContent": "1700 N CHARLES ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.61679, 39.308899]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "METRO STATION - CHARLES CENTER EAST BALTIMORE MD",
+                "id": "P221771154",
+                "popupContent": "METRO STATION - CHARLES CENTER EAST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.983345, 39.806436]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "PARK HEIGHTS AV and SPAULDING AV BALTIMORE MD",
+                "id": "P221772007",
+                "popupContent": "PARK HEIGHTS AV/SPAULDING AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.674857, 39.348452]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1600 N ROSEDALE ST BALTIMORE MD",
+                "id": "P221773668",
+                "popupContent": "1600 N ROSEDALE ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.669405, 39.30618]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1600 N WOLFE ST BALTIMORE MD",
+                "id": "P221803083",
+                "popupContent": "1600 N WOLFE ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.591753, 39.30877]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "2400 WOODBROOK AV BALTIMORE MD",
+                "id": "P221813365",
+                "popupContent": "2400 WOODBROOK AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.641168, 39.310145]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "NORFOLK AV and OAKFIELD AV BALTIMORE MD",
+                "id": "P221822244",
+                "popupContent": "NORFOLK AV/OAKFIELD AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.685486, 39.328176]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "2100 WALBROOK AV BALTIMORE MD",
+                "id": "P221760730",
+                "popupContent": "2100 WALBROOK AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.651515, 39.31095]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1500 N FREMONT AV BALTIMORE MD",
+                "id": "P221761169",
+                "popupContent": "1500 N FREMONT AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.638301, 39.305699]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "0 S BROADWAY BALTIMORE MD",
+                "id": "P221763689",
+                "popupContent": "0 S BROADWAY",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.5929, 39.28221]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1300 DUNDALK AV BALTIMORE MD",
+                "id": "P221784021",
+                "popupContent": "1300 DUNDALK AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.534936, 39.279374]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1400 W NORTH AV BALTIMORE MD",
+                "id": "P221791394",
+                "popupContent": "1400 W NORTH AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.641354, 39.310336]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "500 CUMBERLAND ST BALTIMORE MD",
+                "id": "P221791594",
+                "popupContent": "500 CUMBERLAND ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.640705, 39.310016]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "700 WASHINGTON BL BALTIMORE MD",
+                "id": "P221794527",
+                "popupContent": "700 WASHINGTON BL",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.627036, 39.283545]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "200 N CHARLES ST BALTIMORE MD",
+                "id": "P221811723",
+                "popupContent": "200 N CHARLES ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.615562, 39.291412]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1400 E FAYETTE ST BALTIMORE MD",
+                "id": "P221823398",
+                "popupContent": "1400 E FAYETTE ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.5971647, 39.2931622]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "300 BLK N POPPLETON ST BALTIMORE MD",
+                "id": "P221824232",
+                "popupContent": "300 BLK N POPPLETON ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.649533, 39.319732]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "GWYNNS FALLS PY and KOKO LN BALTIMORE MD",
+                "id": "P221804286",
+                "popupContent": "GWYNNS FALLS PY/KOKO LN",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.649533, 39.319732]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1700 W PRATT ST BALTIMORE MD",
+                "id": "P221820420",
+                "popupContent": "1700 W PRATT ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.643867, 39.285476]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "2300 E MADISON ST BALTIMORE MD",
+                "id": "P221770283",
+                "popupContent": "2300 E MADISON ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.584737, 39.300002]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "900 WILMOT CT BALTIMORE MD",
+                "id": "P221784556",
+                "popupContent": "900 WILMOT CT",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.604614, 39.299423]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "5100 REISTERSTOWN RD BALTIMORE MD",
+                "id": "P221821994",
+                "popupContent": "5100 REISTERSTOWN RD",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.682731, 39.342103]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "5200 REISTERSTOWN RD BALTIMORE MD",
+                "id": "P221763272",
+                "popupContent": "5200 REISTERSTOWN RD",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.683803, 39.342885]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "S MOUNT ST and WILKENS AV BALTIMORE MD",
+                "id": "P221764233",
+                "popupContent": "S MOUNT ST/WILKENS AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.649533, 39.319732]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "500 S PAYSON ST BALTIMORE MD",
+                "id": "P221771687",
+                "popupContent": "500 S PAYSON ST",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.647753, 39.281627]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "4200 LABYRINTH RD BALTIMORE MD",
+                "id": "P221772423",
+                "popupContent": "4200 LABYRINTH RD",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.70942, 39.358577]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1200 E NORTH AV BALTIMORE MD",
+                "id": "P221791758",
+                "popupContent": "1200 E NORTH AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.602269, 39.312055]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "1800 WASHINGTON BL BALTIMORE MD",
+                "id": "P221793318",
+                "popupContent": "1800 WASHINGTON BL",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.644748, 39.276296]
+              }
+            },
+            
+            {
+              "type": "Feature",
+              "properties": {
+                "full_name": "E OLIVER ST and N LAKEWOOD AV BALTIMORE MD",
+                "id": "P221793678",
+                "popupContent": "E OLIVER ST/N LAKEWOOD AV",
+                "show_on_map": true
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-76.649533, 39.319732]
+              }
+            }
+            
+          ];
+        L.geoJSON(data, {
+            onEachFeature: onEachFeature
+        }).addTo(map);
+        </script>
+    </body>
+</html>
