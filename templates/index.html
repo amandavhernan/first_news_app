@@ -1,8 +1,9 @@
 <!doctype html>
 <html lang="en">
     <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- datatables css -->
-    <link href="https://cdn.datatables.net/1.13.3/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.css">
     <!-- css -->
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
     <!-- leaflet css -->
@@ -19,6 +20,7 @@
     <script type="text/javascript" src="https://www.unpkg.com/jquery@3.6.3/dist/jquery.min.js"></script>
     <!-- datatables js -->
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.js"></script>
+
     </head>
     <body>
         <nav>
@@ -33,15 +35,52 @@
                 </div>
             </header>
 
-            <p>intro text</p>
-            <p>resources</p>
+            <p>The opioid epidemic affects all Marylanders, but this news app aims to highlight the extent of substance use disorder in
+                Baltimore. The <a href="https://data.baltimorecity.gov/datasets/911-calls-for-service-2022/explore?filters=eyJkZXNjcmlwdGlvbiI6WyJPVkVSRE9TRSIsIlBPU1MgT1ZFUkRPU0UiXX0%3D">data used to build the heatmap</a> 
+                displaying the concentration of 911 overdose-related calls was sourced from the Open Baltimore data portal. Under the heatmap, users
+                can continue exploring the data by searching for specific neighborhoods, addresses, and call numbers. Users can also use the table to organize 
+                numerical data by ascending or descending order. By clicking on a call number, users will be redirected to a new page containing additional information specific 
+                to that incident.
+            </p>
+            
+            <h3>Resources</h3>
+            <p>Local programs, treatment centers, and support groups</p>
+
             <ul>
-                <li>#</li>
-                <li>#</li>
-                <li>#</li>
+                <li><a href="https://health.baltimorecity.gov/programs/substance-abuse">Staying Alive Drug Overdose Prevention and Response Program</a></li>
+                    <ul>
+                        <li>This program distributes naloxone — a medicine used to reverse overdoses — and provides naloxone training and overdose prevention education.</li>
+                    </ul>
+                <li><a href="https://health.baltimorecity.gov/hiv-std-services/community-risk-reduction">Needle Exchange Program</a></li>
+                <ul>
+                    <li>This program, which is offered by the Baltimore City Health Department, provides clean syringes and disposal services for used syringes to 
+                        individuals who are drug-dependent. The program also provides testing for syphilis and HIV, referrals to treatment centers, and naloxone training.
+                    </li>
+                </ul>
+                <li><a href="https://www.bhsbaltimore.org/">Behavioral Health System Baltimore</a></li>
+                <li><a href="https://namibaltimore.org/">National Alliance on Mental Health - Baltimore</a></li>
+                <li>Substance Abuse and Mental Health Services Administration (SAMHSA)</li>
+                    <ul>
+                        <li>National Helpline: 1-800-662-HELP (4357) or 1-800-487-4889 (TDD, for hearing impaired)</li>
+                        <li><a href="https://findtreatment.gov/">SAMHSA Treatment Facility Locator</a></li>
+                    </ul>
+                <li><a href="https://na.org/?ID=aboutus">Narcotics Anonymous</a></li>
+                <li><a href="https://facesandvoicesofrecovery.org/">Faces & Voices of Recovery</a> </li>
             </ul>
 
+            <h4>Find free naloxone and fentanyl test strips near you</h4>
+            
+            <p><a href="https://docs.google.com/document/d/1AL4WsGJNsBElDHCi-fZZFyEPnOxg59_izGuctQw7goQ/edit">Overdose Response Programs (ORPs) in Maryland</a></p>
+            <iframe src="https://www.google.com/maps/d/embed?mid=1Oc8m4uYRvpJmIKdtG-73GUFLcTQuPmpa&ehbc=2E312F" width="640" height="480"></iframe>
+            <p>Source: <a href="https://health.maryland.gov/pha/NALOXONE/Pages/Approved-Entities.aspx">Maryland Department of Health</a></p>
+
+            <hr>
+
+            <h3>Explore the 911 overdose calls made in 2022</h3>
+
             <div id="map" style="width:100%; height:400px;"></div>
+            <p>Source: <a href="https://data.baltimorecity.gov/datasets/911-calls-for-service-2022/explore?filters=eyJkZXNjcmlwdGlvbiI6WyJPVkVSRE9TRSIsIlBPU1MgT1ZFUkRPU0UiXX0%3D">Open Baltimore</a></p>
+
             <table border=1 cellpadding=7 id="table_id" class="display">
                 <thead>
                 <tr>
